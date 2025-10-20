@@ -1,26 +1,53 @@
-/* ... (Seção CABEÇALHO E STATUS) ... */
+/* ... (Seção CSS RESET BÁSICO E ESTILOS MOBILE-FIRST) ... */
 
-/* Estilo para o botão de Login */
-#btn-login-spotify {
-    background-color: #1DB954; /* Verde Spotify */
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-right: 10px;
+body {
+    /* Novo Fundo Azul Escuro */
+    background-color: #1D2B53; 
+    color: #E0E0E0; /* Texto claro */
+    padding-bottom: 70px; 
 }
 
-#btn-login-spotify .fa-spotify {
-    margin-right: 5px;
+/* ---------------------------------------------------- */
+/* CABEÇALHO E STATUS */
+/* ---------------------------------------------------- */
+.header-mobile { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px; 
+    /* Manter um tom escuro/preto para o topo para melhor contraste */
+    background-color: #000000; 
 }
 
-/* Ajuste o indicador de conexão para o novo layout */
-#indicador-conexao {
-    /* Mantenha o estilo, mas adicione um pequeno padding para separação */
-    padding-left: 5px; 
+/* ---------------------------------------------------- */
+/* BARRA DE NAVEGAÇÃO/FILTRO */
+/* ---------------------------------------------------- */
+.nav-buttons { 
+    display: flex; 
+    justify-content: space-around; 
+    padding: 10px 0; 
+    /* Um tom de azul mais escuro para a navegação */
+    background-color: #162040; 
+    border-bottom: 1px solid #333; 
+    /* ... (o resto permanece) ... */
+}
+
+/* ---------------------------------------------------- */
+/* BUSCADOR */
+/* ---------------------------------------------------- */
+.search-container { 
+    /* Um tom de azul mais escuro para o container de busca */
+    background-color: #162040; 
+    border-bottom: 1px solid #333; 
+    /* ... (o resto permanece) ... */
+}
+
+/* O fundo do input de busca precisa de ajuste para contrastar com o novo azul */
+#campo-busca { 
+    /* ... (o resto permanece) ... */
+    background-color: #283C66; /* Azul escuro do campo de input */
+    color: #E0E0E0; 
+    /* ... (o resto permanece) ... */
 }
 
 /* ... (o resto do código CSS permanece o mesmo) ... */
