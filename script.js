@@ -1,12 +1,9 @@
-// ... (Dentro da seção de INICIALIZAÇÃO) ...
+// ... (Declarações de BIBLIOTECA_ONLINE, etc.) ...
 
-document.getElementById('btn-online').addEventListener('click', function() {
-    if (loggedInSpotify) {
-        // Agora este alert usará https://open.spotify.com/
-        alert(`Simulando a navegação para: ${SPOTIFY_LIKED_SONGS_URL}\n\n*A navegação foi simulada porque o player está em modo demonstração.`);
-        carregarBiblioteca('online', this); 
-    } else {
-        carregarBiblioteca('online', this);
-        abrirModal();
-    }
-});
+// NOVO URL FORNECIDO PELO USUÁRIO
+const SPOTIFY_LIKED_SONGS_URL = "https://open.spotify.com/";
+
+let playlistAtual = [];
+let indiceAtual = -1;
+
+// ... (resto do código) ...
