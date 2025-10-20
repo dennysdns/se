@@ -1,26 +1,26 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify Clone Híbrido</title>
-    
-    <link rel="stylesheet" href="style.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-
-    <header class="header-mobile">
-        <h2>Spotify Clone</h2>
-        <div id="status-rede">
-            <button id="btn-login-spotify" onclick="entrarComSpotify()">
-                <i class="fab fa-spotify"></i> Entrar
+<div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="fecharModal()">&times;</span>
+            <h3>Entrar no Spotify Clone</h3>
+            
+            <button class="login-option spotify-login" onclick="simularLogin('Spotify')">
+                <i class="fab fa-spotify"></i> Continuar com Spotify
             </button>
-            <span id="indicador-conexao">Offline</span>
-        </div>
-    </header>
 
+            <button class="login-option google-login" onclick="simularLogin('Google')">
+                <i class="fab fa-google"></i> Continuar com Google
+            </button>
+            
+            <button class="login-option facebook-login" onclick="simularLogin('Facebook')">
+                <i class="fab fa-facebook-f"></i> Continuar com Facebook
+            </button>
+            
+            <p style="text-align: center; font-size: 12px; color: #aaa; margin-top: 15px;">
+                *Esta é uma simulação de login.
+            </p>
+        </div>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
