@@ -1,188 +1,21 @@
-/* CSS RESET BÁSICO E ESTILOS MOBILE-FIRST */
-* { 
-    box-sizing: border-box; 
-    margin: 0; 
-    padding: 0; 
-    font-family: Arial, sans-serif; 
-}
+/* ... (resto do código CSS) ... */
 
-body { 
-    background-color: #121212; 
-    color: #E0E0E0; 
-    padding-bottom: 70px; 
-}
-
-/* ---------------------------------------------------- */
-/* CABEÇALHO E STATUS */
-/* ---------------------------------------------------- */
-.header-mobile { 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 15px; 
-    background-color: #000000; 
-}
-
-#indicador-conexao { 
-    font-weight: bold; 
-    color: red; 
-}
-
-.status-online { 
-    color: #1DB954; 
-} 
-
-/* ---------------------------------------------------- */
-/* BARRA DE NAVEGAÇÃO/FILTRO */
-/* ---------------------------------------------------- */
-.nav-buttons { 
-    display: flex; 
-    justify-content: space-around; 
-    padding: 10px 0; 
-    background-color: #181818; 
-    border-bottom: 1px solid #333; 
-    position: sticky; 
-    top: 0; 
-    z-index: 10; 
-}
-
-.nav-buttons button { 
-    background: none; 
-    border: none; 
-    color: #E0E0E0; 
-    padding: 8px 15px; 
-    font-size: 14px; 
-    cursor: pointer; 
-    transition: color 0.2s; 
-}
-
-.nav-buttons button.active { 
-    color: #1DB954; 
-    border-bottom: 2px solid #1DB954; 
-}
-
-/* ---------------------------------------------------- */
-/* BUSCADOR */
-/* ---------------------------------------------------- */
-.search-container { 
-    display: flex; 
-    flex-wrap: wrap; 
-    padding: 15px; 
-    gap: 10px; 
-    background-color: #181818; 
-    border-bottom: 1px solid #333; 
-}
-
-#campo-busca { 
-    flex-grow: 1; 
-    padding: 10px; 
-    border-radius: 5px; 
-    border: 1px solid #333; 
-    background-color: #282828; 
-    color: #E0E0E0; 
+.search-buttons {
+    display: flex;
+    gap: 10px;
     width: 100%; 
+    justify-content: center; /* Centraliza o único botão */
 }
 
-.search-buttons { 
-    display: flex; 
-    gap: 10px; 
-    width: 100%; 
-    justify-content: space-around; 
+.search-buttons button {
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-grow: 0.5; /* Ajustado para não preencher 100% se não for necessário, mas ainda ser largo */
+    max-width: 250px; /* Limita a largura em telas maiores, se aplicável */
 }
 
-.search-buttons button { 
-    background-color: #1DB954; 
-    color: white; 
-    border: none; 
-    padding: 10px 15px; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    flex-grow: 1; 
-}
-
-/* ---------------------------------------------------- */
-/* LISTA DE MÚSICAS E ITENS DA LISTA */
-/* ---------------------------------------------------- */
-#lista-musicas { 
-    padding: 15px; 
-}
-
-#lista-musicas h3 { 
-    margin-bottom: 15px; 
-    border-left: 3px solid #1DB954; 
-    padding-left: 10px; 
-}
-
-.faixa-item { 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 12px 0; 
-    border-bottom: 1px solid #282828; 
-}
-
-.faixa-info { 
-    flex-grow: 1; 
-}
-
-.faixa-titulo { 
-    font-weight: bold; 
-    font-size: 16px; 
-}
-
-.faixa-artista { 
-    font-size: 12px; 
-    color: #B3B3B3; 
-}
-
-.faixa-botoes button { 
-    background: none; 
-    border: none; 
-    color: #B3B3B3; 
-    font-size: 18px; 
-    margin-left: 15px; 
-    cursor: pointer; 
-}
-
-.faixa-botoes .btn-ouvir { 
-    color: #1DB954; 
-    font-size: 14px; 
-}
-
-
-/* ---------------------------------------------------- */
-/* PLAYER CONTROLES */
-/* ---------------------------------------------------- */
-#player-controles { 
-    position: fixed; 
-    bottom: 0; 
-    width: 100%; 
-    background-color: #282828; 
-    padding: 10px 15px; 
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); 
-    border-top: 1px solid #383838; 
-}
-
-#info-faixa-atual { 
-    flex-grow: 1; 
-    padding-right: 10px; 
-}
-
-#player-audio-simples { 
-    display: none; 
-}
-
-.controle-play-mobile { 
-    background-color: #1DB954; 
-    color: #FFFFFF; 
-    border: none; 
-    border-radius: 50%; 
-    width: 45px; 
-    height: 45px; 
-    font-size: 20px; 
-    cursor: pointer; 
-    flex-shrink: 0; 
-}
+/* ... (resto do código CSS) ... */
