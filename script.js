@@ -1,12 +1,12 @@
-// ----------------------------------------------------
-// INICIALIZAÇÃO
-// ----------------------------------------------------
+// ... (Dentro da seção de INICIALIZAÇÃO) ...
 
-// 1. Atualiza o status da rede
-networkManager.updateStatus();
-
-// 2. Carrega a biblioteca online padrão
-carregarBiblioteca('online', document.getElementById('btn-online'));
-
-// NOVO: 3. Abre o modal de login automaticamente ao carregar a página
-abrirModal();
+document.getElementById('btn-online').addEventListener('click', function() {
+    if (loggedInSpotify) {
+        // Agora este alert usará https://open.spotify.com/
+        alert(`Simulando a navegação para: ${SPOTIFY_LIKED_SONGS_URL}\n\n*A navegação foi simulada porque o player está em modo demonstração.`);
+        carregarBiblioteca('online', this); 
+    } else {
+        carregarBiblioteca('online', this);
+        abrirModal();
+    }
+});
