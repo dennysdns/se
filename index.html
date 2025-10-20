@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Player Híbrido Completo</title>
+    <title>Spotify Clone Híbrido</title>
     
     <link rel="stylesheet" href="style.css">
     
@@ -12,40 +12,15 @@
 <body>
 
     <header class="header-mobile">
-        <h2>Minhas Músicas</h2>
+        <h2>Spotify Clone</h2>
         <div id="status-rede">
-            <i class="fas fa-wifi"></i> Status: <span id="indicador-conexao">Offline</span>
+            <button id="btn-login-spotify" onclick="entrarComSpotify()">
+                <i class="fab fa-spotify"></i> Entrar
+            </button>
+            <span id="indicador-conexao">Offline</span>
         </div>
     </header>
 
-    <nav class="nav-buttons">
-        <button id="btn-online" class="active" onclick="carregarBiblioteca('online', this)">Explorar Online</button>
-        <button id="btn-offline" onclick="carregarBiblioteca('offline', this)">Baixadas (Offline)</button>
-    </nav>
-
-    <div class="search-container">
-    <input type="text" id="campo-busca" placeholder="Buscar na web..."> 
-    <div class="search-buttons">
-        <button onclick="buscarNaWeb()"><i class="fas fa-globe"></i> Buscar Web</button>
-    </div>
-</div>
-
-    <main id="lista-musicas"></main>
-
-    <footer id="player-controles">
-        <div id="info-faixa-atual">
-            <div class="faixa-titulo" id="current-titulo">Nenhuma Música</div>
-            <div class="faixa-artista" id="current-artista"></div>
-        </div>
-        
-        <button id="play-pause-btn" class="controle-play-mobile" onclick="togglePlayPause()">
-             <i class="fas fa-play"></i>
-        </button>
-        
-        <audio id="player-audio-simples"></audio>
-    </footer>
-
     <script src="script.js"></script>
 </body>
-
 </html>
