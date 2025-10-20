@@ -1,21 +1,26 @@
-/* ... (resto do código CSS) ... */
+/* ... (Seção CABEÇALHO E STATUS) ... */
 
-.search-buttons {
-    display: flex;
-    gap: 10px;
-    width: 100%; 
-    justify-content: center; /* Centraliza o único botão */
-}
-
-.search-buttons button {
-    background-color: #1DB954;
+/* Estilo para o botão de Login */
+#btn-login-spotify {
+    background-color: #1DB954; /* Verde Spotify */
     color: white;
     border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
     cursor: pointer;
-    flex-grow: 0.5; /* Ajustado para não preencher 100% se não for necessário, mas ainda ser largo */
-    max-width: 250px; /* Limita a largura em telas maiores, se aplicável */
+    margin-right: 10px;
 }
 
-/* ... (resto do código CSS) ... */
+#btn-login-spotify .fa-spotify {
+    margin-right: 5px;
+}
+
+/* Ajuste o indicador de conexão para o novo layout */
+#indicador-conexao {
+    /* Mantenha o estilo, mas adicione um pequeno padding para separação */
+    padding-left: 5px; 
+}
+
+/* ... (o resto do código CSS permanece o mesmo) ... */
